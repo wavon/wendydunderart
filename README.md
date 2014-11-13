@@ -1,6 +1,6 @@
-#Artist website project
+##Artist website project
 
-##Purpose
+###Purpose
 
 Initial release is a front end development class project.
 
@@ -8,7 +8,7 @@ A single-page artist website to display photos of artwork, provide artist statem
 
 Client: Wendy Dunder
 
-##Technology requirements
+###Technology requirements
 
 * Host on github pages
 * Use Boostrap and jQuery
@@ -18,7 +18,7 @@ Client: Wendy Dunder
 
 http://kb.mailchimp.com/lists/signup-forms/add-a-signup-form-to-your-website
 
-##Organizational requirements
+###Organizational requirements
 
 Must have:
 
@@ -29,7 +29,7 @@ Must have:
 * at least one carousel that illustrates several facets of one aspect of the site's content
 * design that does not "look like Bootstrap"
 
-##Client requirements
+###Client requirements
 
 * must have a clear call to action - get in contact
 * images of work
