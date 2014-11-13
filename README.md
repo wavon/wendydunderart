@@ -31,9 +31,28 @@ Must have:
 
 ###Client requirements
 
-* must have a clear call to action - get in contact
-* images of work
-* skills and job history
-* Bio or artist statement
-* Optional contact links
+Focus on current work - illuminated sculptures
+
+* Feature images of work - carousel
+* Detail images - process statement
+* Clear call to action - contact
+* Solicit commissions
+* Email and Facebook - notices of upcoming shows
+* Artist statement
+* Contact links (Facebook)
+* Artist photo
+* Artwork details (sold, dimensions)
+* Links to galleries
+
+Galleries
+
+Home Page
+
+http://theislandgallery.net/index.php
+
+Lighting
+
+http://theislandgallery.net/shop/index.php?main_page=index&cPath=3_119
+
+http://www.artelementsgallery.com/index.html
 
