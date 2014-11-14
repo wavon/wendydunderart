@@ -1,0 +1,79 @@
+/* Optional font inlcude method:;
+@import url(http://fonts.googleapis.com/css?family=Pompiere|Josefin+Sans|Open+Sans+Condensed:300|Voltaire);
+*/
+.styleHead {
+  font-family: "Ubuntu";
+  font-weight: 500;
+  font-size: 1.8em;
+  color: #BC9B6A;
+  margin-top: 1em;
+  margin-bottom: 22px;
+  border-top: 1px solid #333;
+  padding-top: 10px;
+}
+
+body {
+  color: #292c2f;
+  font-size: 16px;
+  margin: 1em;
+}
+.logotype {
+  font-size: 50px;
+}
+
+.color {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.swatch1 {
+  background: #BC9B6A;
+}
+.swatch2 {
+  background: #f7bb3b;
+}
+.swatch3 {
+  background: #353331;
+}
+.swatch4 {
+  background: #7f7d7a;
+}
+.swatch5 {
+  background: #d3d2d0;
+}
+.swatch6 {
+  background: #f3f3f3;
+}
+.swatch7 {
+  background: #faab31;
+}
+
+img {
+  width: 500px;
+}
+p {
+  font-size: 1em;
+  line-height: 1.7em;
+}
+.one,
+.two {
+  width: 300px;
+  margin-right: 40px;
+  float: left;
+}
+
+.one {
+  font-family: "Fira Sans"; /*400, 500, 700 */
+  font-weight: 400;
+}
+.two {
+  font-family: "Ubuntu"; /* 400, 700 */
+    font-weight: 400;
+}
+
+hr {
+  clear: both;
+  position: relative;
+}
