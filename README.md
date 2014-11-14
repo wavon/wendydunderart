@@ -42,17 +42,36 @@ Focus on current work - illuminated sculptures
 * Contact links (Facebook)
 * Artist photo
 * Artwork details (sold, dimensions)
-* Links to galleries
+* Links to art galleries
 
-Galleries
+Art Galleries
 
-Home Page
+The Island Gallery - Home Page
 
 http://theislandgallery.net/index.php
 
-Lighting
+Lighting collection
 
 http://theislandgallery.net/shop/index.php?main_page=index&cPath=3_119
 
+Art Elements Gallery
+
 http://www.artelementsgallery.com/index.html
 
+###Inspiration - Site Design
+
+http://studiompls.com/
+
+Like: clean layout, blend of texture and flat, colors, uncluttered, subtle animation (arrows on slider are nice)
+
+http://31three.com/
+
+Gorgeous landing page, also like About and Contact pages. Like the colors, the spaciousness, the texture, the elegance, the subtle animation.
+
+http://www.echocapital.com/investments/
+
+Very effective call to action. Simple shapes, minimal color. Cool animated logo. Quite a bit of animation, but with a purpose. 
+
+https://readme.io/
+
+Flat plus texture, bright colors, modest animation. The FAQ section is ugly, however.
