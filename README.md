@@ -11,7 +11,7 @@ Client: Wendy Dunder
 ###Technology requirements
 
 * Host on github pages
-* Use Boostrap and jQuery
+* Use Bootstrap and jQuery
 * Use ScrollSpy plugin
 * Use navbar and slider components
 * Have a MailChimp mailing list signup form (free account required)
@@ -33,20 +33,20 @@ Must have:
 
 Focus on current work - illuminated sculptures
 
-* Feature images of work - carousel
-* Detail images - process statement
+* Feature images of work in a grid layout
+* Carousel feature: Detail images showing inspiration and process
 * Clear call to action - contact
 * Solicit commissions
 * Email and Facebook - notices of upcoming shows
 * Artist statement
 * Contact links (Facebook)
 * Artist photo
-* Artwork details (sold, dimensions)
+* Artwork details (dimensions)
 * Links to art galleries
 
-Art Galleries
+####Art Galleries
 
-The Island Gallery - Home Page
+The Island Gallery (Bainbridge Island, WA) - Home page
 
 http://theislandgallery.net/index.php
 
@@ -54,7 +54,7 @@ Lighting collection
 
 http://theislandgallery.net/shop/index.php?main_page=index&cPath=3_119
 
-Art Elements Gallery
+Art Elements Gallery - Newberg
 
 http://www.artelementsgallery.com/index.html
 
@@ -62,7 +62,7 @@ http://www.artelementsgallery.com/index.html
 
 http://studiompls.com/
 
-Like: clean layout, blend of texture and flat, colors, uncluttered, subtle animation (arrows on slider are nice)
+Like: clean layout, blend of texture and flat, colors, uncluttered, subtle animation (arrows on slider are nice). Example of Bootstrap site.
 
 http://31three.com/
 
