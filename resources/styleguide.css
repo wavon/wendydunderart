@@ -4,7 +4,6 @@ body {
   color: #353331;
   font-size: 16px;
   margin: 1em;
-  max-width: 800px;
 }
 
 h1,
@@ -58,10 +57,10 @@ ul {
   float: left;
   display: block;
   font-family: "Ubuntu";
-  font-weight: 300;
+  font-weight: 400;
   color: #353331;
   font-size: .9em;
-  line-height: 1em;
+  line-height: 1.2em;
 }
 
 /* swatch circle sample */
@@ -99,3 +98,6 @@ ul {
   height: 220px;
 }
 
+.col-sm-3 {
+  display: inline-block;
+}
