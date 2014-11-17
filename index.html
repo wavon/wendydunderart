@@ -5,24 +5,176 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Wendy Dunder Art</title>
-    <!-- fonts -->
-    <link href='http://fonts.googleapis.com/css?family=Pompiere|Josefin+Sans|Open+Sans+Condensed:300|Voltaire' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Fira+Sans:400,500,700|Ubuntu:400,700' rel='stylesheet' type='text/css'>
-    <!-- Bootstrap -->
+    <link href='http://fonts.googleapis.com/css?family=Ubuntu:300,400,500|Raleway:400,300' rel='stylesheet' type='text/css'>
     <link href="css/bootstrap.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
   </head>
   <body>
-    
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="js/bootstrap.min.js"></script>
+  <!-- navbar -->
+  <div class="container">
+    <nav id="mainNav" class="navbar-wrapper navbar-default navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".navbarLinks">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand pull-left" href="#">Wendy Dunder</a>
+        </div>
+        <div class="collapse navbar-collapse navbarLinks">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#home">Home</a></li>
+            <li class=" "><a href="#gallery">Gallery</a></li>
+            <li class=" "><a href="#about">About</a></li>
+            <li class=" "><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </div>
+  
+  <div class="scrollspy">
+  </div>
+  
+  <!-- full-width jumbotron -->
+  <div id="home" class="jumbotron subtlePattern">
+    <div class="container">
+      <h1 class="logotype text-center">Wendy Dunder Art</h1>    
+    </div>
+  </div>
+
+  <!-- image gallery - grid -->
+  <div id="gallery" class="container">
+    <div class="row">
+      <div class="col-xs-6 col-sm-3">
+        <a href="#" class="thumbnail">
+          <img src="img/2013_e-buck.jpg" data-src="holder.js/100%x166" alt="E-Buck table lamp">
+        </a>
+        <!-- optional label
+          <div class="caption">
+            <h4>Title</h4>
+            <p class="detail">00" H x 00" W</p>
+          </div> -->
+      </div>
+
+      <div class="col-xs-6 col-sm-3">
+        <a href="#" class="thumbnail">
+          <img src="img/2013_e-buck.jpg" data-src="holder.js/100%x166" alt="">
+        </a>
+        <!-- optional label 
+          <div class="caption">
+            <h4>Title</h4>
+            <p class="detail">00" H x 00" W</p>
+          </div> -->
+      </div>
+
+      <div class="col-xs-6 col-sm-3">
+        <a href="#" class="thumbnail">
+          <img src="img/2013_e-buck.jpg" data-src="holder.js/100%x166" alt="">
+        </a>
+        <!-- optional label 
+          <div class="caption">
+            <h4>Title</h4>
+            <p class="detail">00" H x 00" W</p>
+          </div> -->
+      </div>
+      
+      <div class="col-xs-6 col-sm-3">
+        <a href="#" class="thumbnail">
+          <img src="img/2013_e-buck.jpg" data-src="holder.js/100%x166" alt="">
+        </a>
+        <!-- optional label 
+          <div class="caption">
+            <h4>Title</h4>
+            <p class="detail">00" H x 00" W</p>
+          </div> -->
+      </div>
+    </div> 
+  </div>
+  <!-- end gallery -->
+
+  <!-- artist statement -->
+  <div class="container">
+    <div id="about" class="row">
+      <p>Artist statement.</p>
+    </div>
+  </div>
+
+  <!-- process slides - carousel -->
+  <div class="container">
+    <div id="processSlides" class="carousel slide" data-ride="carousel">
+
+      <!-- indicators -->
+      <ol class="carousel-indicators">
+        <li data-target="processSlides" data-slide-to="1"></li>
+        <li data-target="processSlides" data-slide-to="2"></li>
+        <li data-target="processSlides" data-slide-to="3"></li>
+      </ol>
+
+      <!-- wrapper for slides -->
+      <div class="carousel-inner">
+        <div class="item active">
+          <img src="img/2013_e-buck.jpg">
+          <div class="carousel-caption">
+            <h4>How</h4>
+            <p>why</p>
+          </div>
+        </div>
+
+        <div class="item active">
+          <img src="img/file2.jpg">
+          <div class="carousel-caption">
+            <h4>How</h4>
+            <p>why</p>
+          </div>
+        </div>
+
+        <div class="item active">
+          <img src="img/file3.jpg">
+          <div class="carousel-caption">
+            <h4>How</h4>
+            <p>why</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- controls -->
+      <a class="left carousel-control" href="processSlides" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left"></span>
+      </a>
+      <a class="left carousel-control" href="processSlides" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right"></span>
+      </a>
+
+    </div>
+  </div>
+  <!-- end carousel -->
+
+  <!-- contact -->
+  <div class="container">
+    <div id="contact" class="row">
+      <p>Get in touch</p>
+      <a href="mailto:dunder.art@gmail.com">dunder.art@gmail.com</a>
+      <p>503.000.0000</p>
+      <p><a href="https://www.facebook.com/wendy.dunder">Facebook</a></p>
+    </div>
+  </div>
+
+  <!-- footer -->
+  <div class="container">
+    <div class="row">
+      <p class="small">&copy; 2014 Wendy Dunder Art</p>
+    </div>
+  </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.js"></script>
+  <script src="js/bootstrap.js"></script>
+  <script src="js/app.js"></script>
   </body>
 </html>

@@ -1,0 +1,106 @@
+/* 
+swatch1
+#353331
+rgb(53, 51, 49)
+Main text color
+
+swatch2
+#7f7d7a
+rgb(127, 125, 122)
+medium gray
+
+swatch3
+#d3d2d0
+rgb(211, 210, 208)
+light gray
+
+swatch4
+#f3f3f3
+rgb(243, 243, 243)
+lightest gray
+
+swatch5
+#bc9b6a
+rgb(188, 155, 106)
+bronze
+
+swatch6
+#faab31
+rgb(250, 171, 49)
+accent orange
+
+swatch7
+#f7bb3b
+rgb(247, 187, 59)
+light orange
+*/
+
+/* --------------------------
+Navigation
+----------------------------- */
+
+.scrollspy {
+  position: relative;
+  height: 200px;
+  margin-top: 10px;
+  overflow: auto;
+}
+
+/* --------------------------
+Grid & Components
+----------------------------- */
+
+.jumbotron .logotype {
+  font-family: "Raleway";
+  font-size: 8rem;
+  font-weight: 400;
+  color: #353331;
+}
+
+.subtlePattern {
+  background-color: #f7bb3b;
+  /*background-image: url(img/squairy_orange.png);
+  background-repeat: repeat; */
+}
+
+
+/* --------------------------
+Custom Type Styles
+----------------------------- */
+
+p,
+ul {
+  font-family: "Ubuntu";
+  font-weight: 300;
+  color: #353331;
+  font-size: 1.1em;
+  line-height: 1.7em;
+  margin-top: .7rem;
+  margin-bottom: 0;
+}
+
+.small {
+  font-family: "Ubuntu";
+  font-weight: 300;
+  color: #353331;
+  font-size: .9em;
+  line-height: 1em;
+}
+
+.detail {
+  font-family: "Ubuntu";
+  font-weight: 400;
+  color: #353331;
+  font-size: .9em;
+  line-height: 1.2em;
+}
+
+/* --------------------------
+Media Queries
+----------------------------- */
+
+@media screen and (max-width: 768px) {
+  #home .logotype {
+  font-size: 24px;
+  }
+}

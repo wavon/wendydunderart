@@ -16,7 +16,7 @@ h3 {
 
 .styleHead {
   clear: left;
-  background-color: #000;
+  background-color: #7f7d7a;
   color: #fff;
   margin-top: 1em;
   margin-bottom: 22px;
@@ -38,7 +38,7 @@ ul {
 
 .small {
   font-family: "Ubuntu";
-  font-weight: 300;
+  font-weight: 400;
   color: #353331;
   font-size: .9em;
   line-height: 1em;
@@ -72,25 +72,25 @@ ul {
 }
 
 .swatch1 {
-  background: #353331;
+  background: #353331; /* rgb(53, 51, 49) main text color */
 }
 .swatch2 {
-  background: #7f7d7a;
+  background: #7f7d7a; /* rgb(127, 125, 122) medium gray */
 }
 .swatch3 {
-  background: #d3d2d0;
+  background: #d3d2d0; /* rgb(211, 210, 208) light gray */
 }
 .swatch4 {
-  background: #f3f3f3;
+  background: #f3f3f3; /* rgb(243, 243, 243) lightest gray */
 }
 .swatch5 {
-  background: #bc9b6a;
+  background: #bc9b6a; /* rgb(188, 155, 106) bronze */
 }
 .swatch6 {
-  background: #faab31; /* accent1 */
+  background: #faab31; /* rgb(250, 171, 49) accent orange */
 }
 .swatch7 {
-  background: #f7bb3b; /* light orange rgb(247, 187, 59) */
+  background: #f7bb3b; /* rgb(247, 187, 59) light orange */
 }
 
 .thumb {
