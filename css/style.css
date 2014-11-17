@@ -50,9 +50,9 @@ Navigation
 Grid & Components
 ----------------------------- */
 
-.jumbotron .logotype {
+#home .logotype {
   font-family: "Raleway";
-  font-size: 8rem;
+  font-size: 6rem;
   font-weight: 400;
   color: #353331;
 }
@@ -99,8 +99,8 @@ ul {
 Media Queries
 ----------------------------- */
 
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 768px) {
   #home .logotype {
-  font-size: 24px;
+  font-size: 8rem;
   }
 }
