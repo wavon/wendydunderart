@@ -15,31 +15,31 @@
     <![endif]-->
   </head>
   <body>
-  <!-- navbar -->
-  <div class="container">
-    <nav id="mainNav" class="navbar-wrapper navbar-default navbar-fixed-top" role="navigation">
+  <!-- Fixed navbar -->
+    <nav id="mainNav" class="navbar navbar-default navbar-fixed-top" role="navigation">
       <div class="container">
         <div class="navbar-header">
-          <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".navbarLinks">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand pull-left" href="#">Wendy Dunder</a>
+          <a class="navbar-brand" href="#">Wendy Dunder</a>
         </div>
-        <div class="collapse navbar-collapse navbarLinks">
+        <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
-            <li class="active"><a href="#home">Home</a></li>
-            <li class=" "><a href="#gallery">Gallery</a></li>
-            <li class=" "><a href="#about">About</a></li>
-            <li class=" "><a href="#contact">Contact</a></li>
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
           </ul>
         </div>
       </div>
     </nav>
-  </div>
   
-  <div class="scrollspy">
+  <div class="container">
+    <div class="scrollspy">
+    </div>
   </div>
   
   <!-- full-width jumbotron -->
@@ -52,7 +52,7 @@
   <!-- image gallery - grid -->
   <div id="gallery" class="container">
     <!-- row 1 -->
-    <div class="row"> 
+    <div class="row artGrid"> 
       <div class="col-xs-6 col-sm-3">
         <a href="#" class="thumbnail">
           <img src="img/2013_e-buck.jpg" data-src="holder.js/100%x166" alt="E-Buck table lamp">
@@ -67,37 +67,34 @@
         <a href="#" class="thumbnail">
           <img src="img/2013_e-buck.jpg" data-src="holder.js/100%x166" alt="">
         </a>
-        <!-- optional label 
-          <div class="caption">
-            <h4>Title</h4>
-            <p class="detail">00" H x 00" W</p>
-          </div> -->
+        <div class="caption">
+          <h4>Title</h4>
+          <p class="detail">00" H x 00" W</p>
+        </div>
       </div>
 
       <div class="col-xs-6 col-sm-3">
         <a href="#" class="thumbnail">
           <img src="img/2013_e-buck.jpg" data-src="holder.js/100%x166" alt="">
         </a>
-        <!-- optional label 
-          <div class="caption">
-            <h4>Title</h4>
-            <p class="detail">00" H x 00" W</p>
-          </div> -->
+        <div class="caption">
+          <h4>Title</h4>
+          <p class="detail">00" H x 00" W</p>
+        </div>
       </div>
       
       <div class="col-xs-6 col-sm-3">
         <a href="#" class="thumbnail">
           <img src="img/2013_e-buck.jpg" data-src="holder.js/100%x166" alt="">
         </a>
-        <!-- optional label 
-          <div class="caption">
-            <h4>Title</h4>
-            <p class="detail">00" H x 00" W</p>
-          </div> -->
+        <div class="caption">
+          <h4>Title</h4>
+          <p class="detail">00" H x 00" W</p>
+        </div>
       </div>
     </div>
     <!-- row 2 -->
-    <div class="row"> 
+    <div class="row artGrid"> 
       <div class="col-xs-6 col-sm-3">
         <a href="#" class="thumbnail">
           <img src="img/2013_e-buck.jpg" data-src="holder.js/100%x166" alt="E-Buck table lamp">
@@ -112,33 +109,30 @@
         <a href="#" class="thumbnail">
           <img src="img/2013_e-buck.jpg" data-src="holder.js/100%x166" alt="">
         </a>
-        <!-- optional label 
-          <div class="caption">
-            <h4>Title</h4>
-            <p class="detail">00" H x 00" W</p>
-          </div> -->
+        <div class="caption">
+          <h4>Title</h4>
+          <p class="detail">00" H x 00" W</p>
+        </div>
       </div>
 
       <div class="col-xs-6 col-sm-3">
         <a href="#" class="thumbnail">
           <img src="img/2013_e-buck.jpg" data-src="holder.js/100%x166" alt="">
         </a>
-        <!-- optional label 
-          <div class="caption">
-            <h4>Title</h4>
-            <p class="detail">00" H x 00" W</p>
-          </div> -->
+        <div class="caption">
+          <h4>Title</h4>
+          <p class="detail">00" H x 00" W</p>
+        </div>
       </div>
       
       <div class="col-xs-6 col-sm-3">
         <a href="#" class="thumbnail">
           <img src="img/2013_e-buck.jpg" data-src="holder.js/100%x166" alt="">
         </a>
-        <!-- optional label 
-          <div class="caption">
-            <h4>Title</h4>
-            <p class="detail">00" H x 00" W</p>
-          </div> -->
+        <div class="caption">
+          <h4>Title</h4>
+          <p class="detail">00" H x 00" W</p>
+        </div>
       </div>
     </div>  
   </div>
@@ -215,11 +209,11 @@
   </div>
 
   <!-- footer -->
-  <div class="container">
-    <div class="row">
+  <footer class="footer">
+    <div class="container">
       <p class="small">&copy; 2014 Wendy Dunder Art</p>
     </div>
-  </div>
+  </footer>
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.js"></script>
   <script src="js/bootstrap.js"></script>

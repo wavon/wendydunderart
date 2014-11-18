@@ -63,6 +63,27 @@ Grid & Components
   background-repeat: repeat; */
 }
 
+html {
+  position: relative;
+  min-height: 100%;
+}
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: 60px;
+}
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer */
+  height: 50px;
+  background-color: rgba(188, 155, 106, .7);
+  padding-top: 10px;
+}
+
+.footer > .container {
+  padding-left: 0;
+}
 
 /* --------------------------
 Custom Type Styles
@@ -86,13 +107,25 @@ ul {
   font-size: .9em;
   line-height: 1em;
 }
+.artGrid {
+  margin-top: 30px;
+}
+
+.artGrid a {
+  margin-bottom: 0px;
+}
+
+.caption {
+  margin-top: 0;
+  margin-left: 6px;
+}
 
 .detail {
   font-family: "Ubuntu";
   font-weight: 400;
   color: #353331;
   font-size: .9em;
-  line-height: 1.2em;
+  line-height: 1em;
 }
 
 /* --------------------------
