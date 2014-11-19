@@ -39,11 +39,12 @@ light orange
 Navigation
 ----------------------------- */
 
-.scrollspy {
+/* padding-top required for fixed navbar */
+/* position: relative; required for scrollspy; (breaks sticky footer) */
+/* Margin bottom by footer height if footer is position:fixed; */
+body {
   position: relative;
-  height: 200px;
-  margin-top: 10px;
-  overflow: auto;
+  padding-top: 70px;
 }
 
 /* --------------------------
@@ -62,28 +63,22 @@ Grid & Components
   /*background-image: url(img/squairy_orange.png);
   background-repeat: repeat; */
 }
-
+/*
 html {
   position: relative;
   min-height: 100%;
-}
-body {
-  /* Margin bottom by footer height */
-  margin-bottom: 60px;
-}
+} */
+
 .footer {
-  position: absolute;
-  bottom: 0;
+  position: relative;
+  margin-top: 24px;
   width: 100%;
   /* Set the fixed height of the footer */
-  height: 50px;
+  height: 60px;
   background-color: rgba(188, 155, 106, .7);
-  padding-top: 10px;
+  padding-top: 12px;
 }
 
-.footer > .container {
-  padding-left: 0;
-}
 
 /* --------------------------
 Custom Type Styles
@@ -120,20 +115,80 @@ ul {
   margin-left: 6px;
 }
 
+.pieceTitle {
+  font-family: "Ubuntu";
+  font-weight: 500;
+  color: #353331;
+  font-size: 13px;
+  line-height: 1em;
+  margin-top: 0;
+}
+
 .detail {
   font-family: "Ubuntu";
   font-weight: 400;
   color: #353331;
   font-size: .9em;
   line-height: 1em;
+  margin-top: 0;
 }
 
 /* --------------------------
+Image Gallery
+----------------------------*/
+
+#gallery ul {         
+    padding:0 0 0 0;
+    margin:0 0 0 0;
+}
+
+#gallery li {     
+    list-style:none;
+    margin-bottom:18px;
+}
+
+#gallery img {
+    cursor: pointer;
+}
+
+.modal-body {
+  padding: 5px;
+}
+
+.modal-content {
+  border-radius: 2px;
+}
+
+.modal-dialog img {
+  text-align: center;
+  margin: 0 auto;
+}
+
+.controls{          
+    width:50px;
+    display:block;
+    font-size:.8em;
+    padding-top:7px;
+    font-weight:bold;          
+}
+
+.next {
+    float:right;
+    text-align:right;
+}
+
+
+/* --------------------------
 Media Queries
------------------------------ */
+--------------------------- */
 
 @media screen and (min-width: 768px) {
   #home .logotype {
   font-size: 8rem;
   }
+
+  .footer > .container {
+  padding-left: 0;
+  }
+
 }

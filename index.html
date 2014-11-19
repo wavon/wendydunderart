@@ -15,205 +15,152 @@
     <![endif]-->
   </head>
   <body>
+
   <!-- Fixed navbar -->
     <nav id="mainNav" class="navbar navbar-default navbar-fixed-top" role="navigation">
       <div class="container">
         <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbarLinks">
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
           <a class="navbar-brand" href="#">Wendy Dunder</a>
         </div>
-        <div id="navbar" class="navbar-collapse collapse">
+
+        <div class="collapse navbar-collapse navbarLinks">
           <ul class="nav navbar-nav">
-            <li class="active"><a href="#">Home</a></li>
-            <li><a href="#gallery">Gallery</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#contact">Contact</a></li>
+          <!-- must use #home as ID target to highlight in navbar -->
+            <li class="active"><a href="#home">Home</a></li>
+            <li class=" "><a href="#gallery">Gallery</a></li>
+            <li class=" "><a href="#about">About</a></li>
+            <li class=" "><a href="#contact">Contact</a></li>
           </ul>
         </div>
       </div>
     </nav>
   
-  <div class="container">
-    <div class="scrollspy">
+    <!-- full-width jumbotron -->
+    <div id="home" class="jumbotron subtlePattern">
+      <div class="container">
+        <h1 class="logotype text-center">Wendy Dunder Art</h1>  
+      </div>
     </div>
-  </div>
-  
-  <!-- full-width jumbotron -->
-  <div id="home" class="jumbotron subtlePattern">
+
+    <!-- image gallery - grid -->
     <div class="container">
-      <h1 class="logotype text-center">Wendy Dunder Art</h1>    
+      <ul id="gallery" class="row">
+        <li class="col-lg-2 col-md-3 col-sm-4 col-xs-6"><img class="img-responsive" src="img/s_baroque-02.jpg" alt=" "><span class="pieceTitle">Baroque</span>
+            </li>
+        <li class="col-lg-2 col-md-3 col-sm-4 col-xs-6"><img class="img-responsive" src="img/new_moon.jpg"><span class="pieceTitle">New Moon</span></li>
+        <li class="col-lg-2 col-md-3 col-sm-4 col-xs-6"><img class="img-responsive" src="img/s_cobra.jpg"><span class="pieceTitle">Cobra</span></li>
+        <li class="col-lg-2 col-md-3 col-sm-4 col-xs-6"><img class="img-responsive" src="img/seastar.jpg"><span class="pieceTitle">Seastar</span></li>
+        <li class="col-lg-2 col-md-3 col-sm-4 col-xs-6"><img class="img-responsive" src="img/s4476.jpg"><span class="pieceTitle">Title</span></li>
+        <li class="col-lg-2 col-md-3 col-sm-4 col-xs-6"><img class="img-responsive" src="img/nasturtium.jpg"><span class="pieceTitle">Nasturtium</span></li>
+        <li class="col-lg-2 col-md-3 col-sm-4 col-xs-6"><img class="img-responsive" src="img/gordo.jpg"><span class="pieceTitle">Gordo</span></li>
+        <li class="col-lg-2 col-md-3 col-sm-4 col-xs-6"><img class="img-responsive" src="img/6428-01.jpg"><span class="pieceTitle">Title</span></li>
+        <li class="col-lg-2 col-md-3 col-sm-4 col-xs-6"><img class="img-responsive" src="img/embracing_moon.jpg"><span class="pieceTitle">Embracing Moon</span></li>
+        <li class="col-lg-2 col-md-3 col-sm-4 col-xs-6"><img class="img-responsive" src="img/torch.jpg"><span class="pieceTitle">Torch</span></li>
+        <li class="col-lg-2 col-md-3 col-sm-4 col-xs-6"><img class="img-responsive" src="img/7016.jpg"><span class="pieceTitle">Title</span></li>
+        <li class="col-lg-2 col-md-3 col-sm-4 col-xs-6"><img class="img-responsive" src="img/6556-01.jpg"><span class="pieceTitle">Title</span></li>
+        <li class="col-lg-2 col-md-3 col-sm-4 col-xs-6"><img class="img-responsive" src="img/7010.jpg"><span class="pieceTitle">Title</span></li>
+        <li class="col-lg-2 col-md-3 col-sm-4 col-xs-6"><img class="img-responsive" src="img/e-buck.jpg"><span class="pieceTitle">E-Buck</span></li>
+        <li class="col-lg-2 col-md-3 col-sm-4 col-xs-6"><img class="img-responsive" src="img/lotus_01.jpg"><span class="pieceTitle">Lotus</span></li>
+        <li class="col-lg-2 col-md-3 col-sm-4 col-xs-6"><img class="img-responsive" src="img/tideline.jpg"><span class="pieceTitle">Tideline</span></li>
+        <li class="col-lg-2 col-md-3 col-sm-4 col-xs-6"><img class="img-responsive" src="img/tulip_tree.jpg"><span class="pieceTitle">Tulip Tree</span></li>
+        <li class="col-lg-2 col-md-3 col-sm-4 col-xs-6"><img class="img-responsive" src="img/collagenecoff.jpg"><span class="pieceTitle">Collagenecoff</span></li>
+      </ul>
     </div>
-  </div>
-
-  <!-- image gallery - grid -->
-  <div id="gallery" class="container">
-    <!-- row 1 -->
-    <div class="row artGrid"> 
-      <div class="col-xs-6 col-sm-3">
-        <a href="#" class="thumbnail">
-          <img src="img/2013_e-buck.jpg" data-src="holder.js/100%x166" alt="E-Buck table lamp">
-        </a>
-        <div class="caption">
-          <h4>Title</h4>
-          <p class="detail">00" H x 00" W</p>
-        </div>
-      </div>
-
-      <div class="col-xs-6 col-sm-3">
-        <a href="#" class="thumbnail">
-          <img src="img/2013_e-buck.jpg" data-src="holder.js/100%x166" alt="">
-        </a>
-        <div class="caption">
-          <h4>Title</h4>
-          <p class="detail">00" H x 00" W</p>
-        </div>
-      </div>
-
-      <div class="col-xs-6 col-sm-3">
-        <a href="#" class="thumbnail">
-          <img src="img/2013_e-buck.jpg" data-src="holder.js/100%x166" alt="">
-        </a>
-        <div class="caption">
-          <h4>Title</h4>
-          <p class="detail">00" H x 00" W</p>
-        </div>
-      </div>
-      
-      <div class="col-xs-6 col-sm-3">
-        <a href="#" class="thumbnail">
-          <img src="img/2013_e-buck.jpg" data-src="holder.js/100%x166" alt="">
-        </a>
-        <div class="caption">
-          <h4>Title</h4>
-          <p class="detail">00" H x 00" W</p>
-        </div>
-      </div>
-    </div>
-    <!-- row 2 -->
-    <div class="row artGrid"> 
-      <div class="col-xs-6 col-sm-3">
-        <a href="#" class="thumbnail">
-          <img src="img/2013_e-buck.jpg" data-src="holder.js/100%x166" alt="E-Buck table lamp">
-        </a>
-        <div class="caption">
-          <h4>Title</h4>
-          <p class="detail">00" H x 00" W</p>
-        </div>
-      </div>
-
-      <div class="col-xs-6 col-sm-3">
-        <a href="#" class="thumbnail">
-          <img src="img/2013_e-buck.jpg" data-src="holder.js/100%x166" alt="">
-        </a>
-        <div class="caption">
-          <h4>Title</h4>
-          <p class="detail">00" H x 00" W</p>
-        </div>
-      </div>
-
-      <div class="col-xs-6 col-sm-3">
-        <a href="#" class="thumbnail">
-          <img src="img/2013_e-buck.jpg" data-src="holder.js/100%x166" alt="">
-        </a>
-        <div class="caption">
-          <h4>Title</h4>
-          <p class="detail">00" H x 00" W</p>
-        </div>
-      </div>
-      
-      <div class="col-xs-6 col-sm-3">
-        <a href="#" class="thumbnail">
-          <img src="img/2013_e-buck.jpg" data-src="holder.js/100%x166" alt="">
-        </a>
-        <div class="caption">
-          <h4>Title</h4>
-          <p class="detail">00" H x 00" W</p>
-        </div>
-      </div>
-    </div>  
-  </div>
-  <!-- end gallery -->
-
-  <!-- artist statement -->
-  <div class="container">
-    <div id="about" class="row">
-      <div class="col-xs-12">
-        <p>Artist statement. Paragraphs of text here about inspiration, process, whatever. Why I do what I do. I turn simple stuff into beautiful, functional, and durable art.</p>
-        <p>Artist statement. Paragraphs of text here about inspiration, process, whatever. Why I do what I do. I turn simple stuff into beautiful, functional, and durable art.</p>
-      </div>
-    </div>
-  </div>
-
-  <!-- process slides - carousel -->
-  <div class="container">
-    <div id="processSlides" class="carousel slide" data-ride="carousel">
-
-      <!-- indicators -->
-      <ol class="carousel-indicators">
-        <li data-target="processSlides" data-slide-to="1"></li>
-        <li data-target="processSlides" data-slide-to="2"></li>
-        <li data-target="processSlides" data-slide-to="3"></li>
-      </ol>
-
-      <!-- wrapper for slides -->
-      <div class="carousel-inner">
-        <div class="item active">
-          <img src="img/2013_e-buck.jpg">
-          <div class="carousel-caption">
-            <h4>How</h4>
-            <p>why</p>
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">         
+          <div class="modal-body">                
           </div>
-        </div>
+        </div><!-- /.modal-content -->
+      </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+    <!-- end gallery -->
 
-        <div class="item">
-          <img src="img/2013_e-buck.jpg">
-          <div class="carousel-caption">
-            <h4>How</h4>
-            <p>why</p>
-          </div>
-        </div>
-
-        <div class="item">
-          <img src="img/2013_e-buck.jpg">
-          <div class="carousel-caption">
-            <h4>How</h4>
-            <p>why</p>
+    <!-- artist statement -->
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-6">
+            <p>Artist statement. Paragraphs of text here about inspiration, process, whatever. Why I do what I do. I turn simple stuff into beautiful, functional, and durable art.</p>
+            <p>Artist statement. Paragraphs of text here about inspiration, process, whatever. Why I do what I do. I turn simple stuff into beautiful, functional, and durable art.</p>
+            <p>Artist statement. Paragraphs of text here about inspiration, process, whatever. Why I do what I do. I turn simple stuff into beautiful, functional, and durable art.</p>
+            <p>Artist statement. Paragraphs of text here about inspiration, process, whatever. Why I do what I do. I turn simple stuff into beautiful, functional, and durable art.</p>
           </div>
         </div>
       </div>
 
-      <!-- controls -->
-      <a class="left carousel-control" href="processSlides" data-slide="prev">
-        <span class="glyphicon glyphicon-chevron-left"></span>
-      </a>
-      <a class="left carousel-control" href="processSlides" data-slide="next">
-        <span class="glyphicon glyphicon-chevron-right"></span>
-      </a>
+      <!-- process slides - carousel -->
+      <div id="processSlides" class="container">
+        <div class="carousel slide" data-ride="carousel">
 
+          <!-- indicators -->
+          <ol class="carousel-indicators">
+            <li data-target="processSlides" data-slide-to="1"></li>
+            <li data-target="processSlides" data-slide-to="2"></li>
+            <li data-target="processSlides" data-slide-to="3"></li>
+          </ol>
+
+          <!-- wrapper for slides -->
+          <div class="carousel-inner">
+            <div class="item active">
+              <img src="img/artSlide_01.jpg">
+              <div class="carousel-caption">
+                <h4>How</h4>
+                <p>why</p>
+              </div>
+            </div>
+
+            <div class="item">
+              <img src="img/artSlide_02.jpg">
+              <div class="carousel-caption">
+                <h4>How</h4>
+                <p>why</p>
+              </div>
+            </div>
+
+            <div class="item">
+              <img src="img/artSlide_03.jpg">
+              <div class="carousel-caption">
+                <h4>How</h4>
+                <p>why</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- controls -->
+          <a class="left carousel-control" href="processSlides" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left"></span>
+          </a>
+          <a class="left carousel-control" href="processSlides" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right"></span>
+          </a>
+        </div>
+      </div>
     </div>
-  </div>
-  <!-- end carousel -->
+    <!-- end about -->
+    <!-- end carousel -->
 
-  <!-- contact -->
-  <div class="container">
-    <div id="contact" class="row">
-      <p>Get in touch</p>
-      <a href="mailto:dunder.art@gmail.com">dunder.art@gmail.com</a>
-      <p>503.000.0000</p>
-      <p><a href="https://www.facebook.com/wendy.dunder">Facebook</a></p>
-    </div>
-  </div>
-
-  <!-- footer -->
-  <footer class="footer">
+    <!-- contact -->
     <div class="container">
-      <p class="small">&copy; 2014 Wendy Dunder Art</p>
+      <div id="contact" class="row">
+        <p>Get in touch</p>
+        <a href="mailto:dunder.art@gmail.com">dunder.art@gmail.com</a>
+        <p>503.000.0000</p>
+        <p><a href="https://www.facebook.com/wendy.dunder">Facebook</a></p>
+      </div>
     </div>
-  </footer>
+
+    <!-- footer -->
+    <footer class="footer">
+      <div class="container">
+        <p class="small">&copy; 2014 Wendy Dunder Art</p>
+      </div>
+    </footer>
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.js"></script>
   <script src="js/bootstrap.js"></script>
