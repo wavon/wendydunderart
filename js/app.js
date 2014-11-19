@@ -45,7 +45,7 @@ $('li img').on('click',function(){
 //set up click handler for previous and next buttons
 $(document).on('click', 'a.controls', function(){
   var index = $(this).attr('href');
-  var src = $('ul.row li:nth-child('+ index + ') img').attr('src');
+  var src = $('ul.imageGallery li:nth-child('+ index + ') img').attr('src');
   $('.modal-body img').attr('src', src);
 
   var newPrevIndex = parseInt(index) - 1;
@@ -60,7 +60,7 @@ $(document).on('click', 'a.controls', function(){
   }
 
   // hide "next" link on last image and "prev" on first
-  var total = $('ul.row li').length + 1;
+  var total = $('ul.imageGallery li').length + 1;
   // hide next button
   if (total === newNextIndex) {
     $('a.next').hide();
