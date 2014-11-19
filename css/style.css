@@ -42,9 +42,15 @@ Navigation
 /* padding-top required for fixed navbar */
 /* position: relative; required for scrollspy; (breaks sticky footer) */
 /* Margin bottom by footer height if footer is position:fixed; */
+
+html {
+  position: relative;
+  min-height: 100%;
+} 
+
 body {
   position: relative;
-  padding-top: 70px;
+  padding-top: 50px;
 }
 
 /* --------------------------
@@ -63,11 +69,6 @@ Grid & Components
   /*background-image: url(img/squairy_orange.png);
   background-repeat: repeat; */
 }
-/*
-html {
-  position: relative;
-  min-height: 100%;
-} */
 
 .footer {
   position: relative;
@@ -101,18 +102,6 @@ ul {
   color: #353331;
   font-size: .9em;
   line-height: 1em;
-}
-.artGrid {
-  margin-top: 30px;
-}
-
-.artGrid a {
-  margin-bottom: 0px;
-}
-
-.caption {
-  margin-top: 0;
-  margin-left: 6px;
 }
 
 .pieceTitle {
@@ -190,5 +179,8 @@ Media Queries
   .footer > .container {
   padding-left: 0;
   }
-
+  
+  .footer p {
+  padding-left: 30px;
+  }
 }
