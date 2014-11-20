@@ -42,12 +42,12 @@ Navigation
 /* padding-top required for fixed navbar */
 /* position: relative; required for scrollspy; (breaks sticky footer) */
 /* Margin bottom by footer height if footer is position:fixed; */
-
+/*
 html {
   position: relative;
   min-height: 100%;
 } 
-
+*/
 body {
   position: relative;
   padding-top: 50px;
@@ -71,15 +71,14 @@ Grid & Components
 }
 
 .footer {
-  position: relative;
-  margin-top: 24px;
+  position: fixed;
+  bottom: 0;
   width: 100%;
   /* Set the fixed height of the footer */
   height: 60px;
-  background-color: rgba(188, 155, 106, .7);
+  background-color: rgb(188, 155, 106);
   padding-top: 12px;
 }
-
 
 /* --------------------------
 Custom Type Styles
@@ -127,13 +126,13 @@ Image Gallery
 ----------------------------*/
 
 #gallery ul {         
-    padding:0 0 0 0;
-    margin:0 0 0 0;
+    padding: 0 0 0 0;
+    margin: 0 0 0 0;
 }
 
 #gallery li {     
-    list-style:none;
-    margin-bottom:18px;
+    list-style: none;
+    margin-bottom: 18px;
 }
 
 #gallery img {
@@ -153,17 +152,17 @@ Image Gallery
   margin: 0 auto;
 }
 
-.controls{          
-    width:50px;
-    display:block;
-    font-size:.8em;
-    padding-top:7px;
-    font-weight:bold;          
+.controls {          
+  width: 50px;
+  display: block;
+  font-size: .8em;
+  padding-top: 7px;
+  font-weight: bold;          
 }
 
 .next {
-    float:right;
-    text-align:right;
+  float: right;
+  text-align: right;
 }
 
 
@@ -176,11 +175,4 @@ Media Queries
   font-size: 8rem;
   }
 
-  .footer > .container {
-  padding-left: 0;
-  }
-  
-  .footer p {
-  padding-left: 30px;
-  }
 }
