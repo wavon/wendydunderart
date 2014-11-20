@@ -80,6 +80,24 @@ Grid & Components
   padding-top: 12px;
 }
 
+#processSlides {
+  margin-top: 24px;
+  margin-bottom: 24px;
+}
+
+.carousel-caption {
+  padding: .5em;
+  border-radius: 12px;
+  margin-bottom: 36px;
+  background-color: rgba(243, 243, 243, .5);
+}
+
+.carousel-caption h4 {
+  color: #353331;
+  margin-top: 0;
+}
+
+
 /* --------------------------
 Custom Type Styles
 ----------------------------- */
