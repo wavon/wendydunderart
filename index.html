@@ -5,7 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Wendy Dunder Art | Illuminated Sculptures</title>
-    <link href="css/bootstrap.css" rel="stylesheet">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
     <link href="css/style.css" rel="stylesheet">
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -19,7 +20,7 @@
     <nav id="mainNav" class="navbar navbar-default navbar-fixed-top" role="navigation">
       <div class="container">
         <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbarLinks" aria-expanded="false" aria-controls="navbar">
             <span class="sr-only">Toggle navigation</span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
@@ -28,7 +29,7 @@
           <a class="navbar-brand" href="#">Wendy Dunder</a>
         </div>
 
-        <div id="navbar" class="navbar-collapse collapse navbarLinks">
+        <div class="collapse navbar-collapse navbarLinks">
           <ul class="nav navbar-nav">
           <!-- must use #home as ID target to highlight in navbar -->
             <li class="active"><a href="#home">Home</a></li>
@@ -50,28 +51,30 @@
     </div>
 
     <!-- image gallery - grid -->
-    <div id="gallery" class="container">
-      <div class="row">
-        <ul class="imageGallery">
-          <li class="col-lg-2 col-md-3 col-sm-4 col-xs-6"><img class="img-responsive" src="img/s_baroque-02.jpg" alt=""><span class="pieceTitle">Baroque</span></li>
-          <li class="col-lg-2 col-md-3 col-sm-4 col-xs-6"><img class="img-responsive" src="img/new_moon.jpg"><span class="pieceTitle">New Moon</span></li>
-          <li class="col-lg-2 col-md-3 col-sm-4 col-xs-6"><img class="img-responsive" src="img/s_cobra.jpg"><span class="pieceTitle">Cobra</span></li>
-          <li class="col-lg-2 col-md-3 col-sm-4 col-xs-6"><img class="img-responsive" src="img/seastar.jpg"><span class="pieceTitle">Seastar</span></li>
-          <li class="col-lg-2 col-md-3 col-sm-4 col-xs-6"><img class="img-responsive" src="img/s4476.jpg"><span class="pieceTitle">Title</span></li>
-          <li class="col-lg-2 col-md-3 col-sm-4 col-xs-6"><img class="img-responsive" src="img/nasturtium.jpg"><span class="pieceTitle">Nasturtium</span></li>
-          <li class="col-lg-2 col-md-3 col-sm-4 col-xs-6"><img class="img-responsive" src="img/gordo.jpg"><span class="pieceTitle">Gordo</span></li>
-          <li class="col-lg-2 col-md-3 col-sm-4 col-xs-6"><img class="img-responsive" src="img/6428-01.jpg"><span class="pieceTitle">Title</span></li>
-          <li class="col-lg-2 col-md-3 col-sm-4 col-xs-6"><img class="img-responsive" src="img/embracing_moon.jpg"><span class="pieceTitle">Embracing Moon</span></li>
-          <li class="col-lg-2 col-md-3 col-sm-4 col-xs-6"><img class="img-responsive" src="img/torch.jpg"><span class="pieceTitle">Torch</span></li>
-          <li class="col-lg-2 col-md-3 col-sm-4 col-xs-6"><img class="img-responsive" src="img/7016.jpg"><span class="pieceTitle">Title</span></li>
-          <li class="col-lg-2 col-md-3 col-sm-4 col-xs-6"><img class="img-responsive" src="img/6556-01.jpg"><span class="pieceTitle">Title</span></li>
-          <li class="col-lg-2 col-md-3 col-sm-4 col-xs-6"><img class="img-responsive" src="img/7010.jpg"><span class="pieceTitle">Title</span></li>
-          <li class="col-lg-2 col-md-3 col-sm-4 col-xs-6"><img class="img-responsive" src="img/e-buck.jpg"><span class="pieceTitle">E-Buck</span></li>
-          <li class="col-lg-2 col-md-3 col-sm-4 col-xs-6"><img class="img-responsive" src="img/lotus_01.jpg"><span class="pieceTitle">Lotus</span></li>
-          <li class="col-lg-2 col-md-3 col-sm-4 col-xs-6"><img class="img-responsive" src="img/tideline.jpg"><span class="pieceTitle">Tideline</span></li>
-          <li class="col-lg-2 col-md-3 col-sm-4 col-xs-6"><img class="img-responsive" src="img/tulip_tree.jpg"><span class="pieceTitle">Tulip Tree</span></li>
-          <li class="col-lg-2 col-md-3 col-sm-4 col-xs-6"><img class="img-responsive" src="img/collagenecoff.jpg"><span class="pieceTitle">Collagenecoff</span></li>
-        </ul>
+    <div id="gallery">
+      <div class="container">
+        <div class="row">
+          <ul class="imageGallery">
+            <li class="col-lg-2 col-md-3 col-sm-4 col-xs-6"><img class="img-responsive" src="img/baroque.jpg"><span class="pieceTitle">Baroque</span></li>
+            <li class="col-lg-2 col-md-3 col-sm-4 col-xs-6"><img class="img-responsive" src="img/new_moon.jpg"><span class="pieceTitle">New Moon</span></li>
+            <li class="col-lg-2 col-md-3 col-sm-4 col-xs-6"><img class="img-responsive" src="img/cobra.jpg"><span class="pieceTitle">Cobra</span></li>
+            <li class="col-lg-2 col-md-3 col-sm-4 col-xs-6"><img class="img-responsive" src="img/seastar.jpg"><span class="pieceTitle">Seastar</span></li>
+            <li class="col-lg-2 col-md-3 col-sm-4 col-xs-6"><img class="img-responsive" src="img/s4476.jpg"><span class="pieceTitle">Title</span></li>
+            <li class="col-lg-2 col-md-3 col-sm-4 col-xs-6"><img class="img-responsive" src="img/nasturtium.jpg"><span class="pieceTitle">Nasturtium</span></li>
+            <li class="col-lg-2 col-md-3 col-sm-4 col-xs-6"><img class="img-responsive" src="img/gordo.jpg"><span class="pieceTitle">Gordo</span></li>
+            <li class="col-lg-2 col-md-3 col-sm-4 col-xs-6"><img class="img-responsive" src="img/6428-01.jpg"><span class="pieceTitle">Title</span></li>
+            <li class="col-lg-2 col-md-3 col-sm-4 col-xs-6"><img class="img-responsive" src="img/embracing_moon.jpg"><span class="pieceTitle">Embracing Moon</span></li>
+            <li class="col-lg-2 col-md-3 col-sm-4 col-xs-6"><img class="img-responsive" src="img/torch.jpg"><span class="pieceTitle">Torch</span></li>
+            <li class="col-lg-2 col-md-3 col-sm-4 col-xs-6"><img class="img-responsive" src="img/7016.jpg"><span class="pieceTitle">Title</span></li>
+            <li class="col-lg-2 col-md-3 col-sm-4 col-xs-6"><img class="img-responsive" src="img/6556-01.jpg"><span class="pieceTitle">Title</span></li>
+            <li class="col-lg-2 col-md-3 col-sm-4 col-xs-6"><img class="img-responsive" src="img/7010.jpg"><span class="pieceTitle">Title</span></li>
+            <li class="col-lg-2 col-md-3 col-sm-4 col-xs-6"><img class="img-responsive" src="img/e-buck.jpg"><span class="pieceTitle">E-Buck</span></li>
+            <li class="col-lg-2 col-md-3 col-sm-4 col-xs-6"><img class="img-responsive" src="img/lotus_01.jpg"><span class="pieceTitle">Lotus</span></li>
+            <li class="col-lg-2 col-md-3 col-sm-4 col-xs-6"><img class="img-responsive" src="img/tideline.jpg"><span class="pieceTitle">Tideline</span></li>
+            <li class="col-lg-2 col-md-3 col-sm-4 col-xs-6"><img class="img-responsive" src="img/tulip_tree.jpg"><span class="pieceTitle">Tulip Tree</span></li>
+            <li class="col-lg-2 col-md-3 col-sm-4 col-xs-6"><img class="img-responsive" src="img/collagenecoff.jpg"><span class="pieceTitle">Collagenecoff</span></li>
+          </ul>
+        </div>
       </div>
     </div>
     <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
@@ -127,7 +130,7 @@
               <div class="container">
                 <div class="carousel-caption text-center">
                   <h4>Paper</h4>
-                  <p>Many thin layers of translucent paper are applied.</p>
+                  <p>Many layers of thin, translucent paper are applied.</p>
                 </div>
               </div>
             </div>
@@ -136,7 +139,7 @@
               <img src="img/artSlide_03.jpg">
               <div class="carousel-caption text-center">
                 <h4>Installation options</h4>
-                <p>Sculptures range in size and are mounted or free-standing.</p>
+                <p>Sculptures range in size and are free-standing or wall-mounted.</p>
               </div>
             </div>
           </div>
@@ -157,21 +160,37 @@
     <!-- end about -->
     
     <!-- contact -->
-    <div id="contact" class="container">
-      <div class="row">
-        <div class="col-md-2">
-          <p>Get in touch</p>
-          <a href="mailto:dunder.art@gmail.com">dunder.art@gmail.com</a>
-          <p>503.000.0000</p>
-          <p><a href="https://www.facebook.com/wendy.dunder">Facebook</a></p>
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-6">
+            <h2>Get in touch!</h2>
+            <p>Ask about:</p>
+              <ul>
+                <li>Commissions</li>
+                <li>Custom site-specific installations</li>
+                <li>Available pieces and prices</li>
+                <li>Galleries and art shows</li>
+              </ul>
+            <p>Email</p>
+            <a href="mailto:dunder.art@gmail.com">dunder.art@gmail.com</a>
+            <p>Phone: 503.000.0000</p>
+            <p>Sign up to be notified of future shows.</p>
+            <p><a href="https://www.facebook.com/wendy.dunder">Facebook</a></p>
+            <h3>Gallery affiliates</h3>
+            <p><a href="http://theislandgallery.net/index.php">The Island Gallery, Bainbridge Island, WA</a></p>
+            <p>The Island Gallery &mdash; <a href="http://theislandgallery.net/shop/index.php?main_page=index&cPath=3_119">Lighting collection (includes prices)</a></p>
+            <p><a href="http://www.artelementsgallery.com/index.html">Art Elements Gallery, Newberg, OR</a></p>
+          </div>
         </div>
       </div>
     </div>
-
+    <!-- sticky footer -->
+    <div class="push"></div>
     <!-- footer -->
     <footer class="footer">
       <div class="container">
-        <p class="small">&copy; 2014 Wendy Dunder</p>
+        <p class="copy">&copy; 2014 Wendy Dunder</p>
       </div>
     </footer>
 
