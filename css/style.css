@@ -51,7 +51,7 @@ Web fonts
 }
 
 /* --------------------------
-Navigation
+Footer and scrollspy
 ----------------------------- */
 
 /* sticky footer */
@@ -61,7 +61,6 @@ html {
 
 .push {
   height: 60px;
-  margin-top: 24px;
 }
 
 /* body padding-top required for fixed navbar */
@@ -71,6 +70,9 @@ html {
 body {
   position: relative;
   padding-top: 50px;
+  margin-bottom: 24px;
+  font-family: "Ubuntu", Helvetica, Arial, sans-serif;
+  font-weight: 300;
 }
 
 /* --------------------------
@@ -165,15 +167,42 @@ Bootstrap Override Styles
   border-color: transparent;
 }
 
+.navbar-default .navbar-nav > li > a {
+  color: #bc9b6a;
+}
+
+.navbar-default .navbar-nav > li > a:hover {
+  color: #fabb3b;
+}
+
 .navbar-default .navbar-brand {
   color: #bc9b6a;
   font-family: "Raleway";
   font-weight: 400;
 }
 
+a {
+  color: #bc9b6a;
+}
+
+a:active {
+  text-decoration: none;
+}
+
+a:hover {
+  color: #faab31;
+  text-decoration: none;
+}
+
 /* --------------------------
 Custom Type Styles
 ----------------------------- */
+
+h2,
+h3 {
+  font-weight: 500;
+  color: #353331;
+}
 
 p,
 ul {
