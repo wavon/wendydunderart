@@ -1,5 +1,3 @@
-/* JavaScript method */
-
 /* call on the class or ID of the parent element of the .nav component */
 
 $('body').scrollspy({ target: '.navbarLinks' });
@@ -15,7 +13,6 @@ Image Gallery
 -------------------------*/
 
 //click on thumbnail image
-//$(document).ready(function(){
 $('li img').on('click',function(){
     var src = $(this).attr('src');
     var img = '<img src="' + src + '" class="img-responsive"/>';
@@ -40,7 +37,7 @@ $('li img').on('click',function(){
       $('#myModal .modal-body').html('');
     });
   });
-//})
+
 
 //set up click handler for previous and next buttons
 $(document).on('click', 'a.controls', function(){
