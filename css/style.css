@@ -84,14 +84,14 @@ Grid & Components
 }
 
 #home .logotype {
-  font-family: "Raleway";
+  font-family: "Raleway", sans-serif;
   font-size: 3.6rem;
   font-weight: 400;
   color: #fabb3b;
 }
 
 .logoscript {
-  font-family: 'dobkinplain';
+  font-family: 'dobkinplain', cursive, serif;
   font-size: 2.8rem;
   line-height: 3.5rem;
   margin-top: 1em;
@@ -114,6 +114,16 @@ Grid & Components
   padding: 1.6em;
   border-radius: 1em;
   border: 1px solid #bc9b6a;
+}
+
+.artistStatement {
+  padding: 1.5em;
+}
+
+.artistStatement p {
+  float: left;
+  font-size: 18px;
+  color: #bc9b6a;
 }
 
 #processSlides {
@@ -177,7 +187,7 @@ Bootstrap Override Styles
 
 .navbar-default .navbar-brand {
   color: #bc9b6a;
-  font-family: "Raleway";
+  font-family: "Raleway", sans-serif;
   font-weight: 400;
 }
 
@@ -194,6 +204,22 @@ a:hover {
   text-decoration: none;
 }
 
+.footer .btn:focus,
+.footer .btn:active:focus,
+.footer .btn.active:focus,
+.footer .btn.focus,
+.footer .btn:active.focus,
+.footer .btn.active.focus {
+  outline: thin dotted;
+  outline: 5px auto #bc9b6a; /*-webkit-focus-ring-color */
+  outline-offset: -2px;
+  background-color: #fff;
+}
+
+.footer button {
+  margin-right: 2em;
+}
+
 /* --------------------------
 Custom Type Styles
 ----------------------------- */
@@ -206,7 +232,7 @@ h3 {
 
 p,
 ul {
-  font-family: "Ubuntu";
+  font-family: "Ubuntu", Helvetica, Arial, sans-serif;
   font-weight: 300;
   color: #353331;
   font-size: 1.1em;
@@ -216,15 +242,12 @@ ul {
 }
 
 .copy {
-  font-family: "Ubuntu";
-  font-weight: 400;
-  color: #353331;
   font-size: .9em;
-  line-height: 1em;
+  margin-top: 1em;
 }
 
 .pieceTitle {
-  font-family: "Ubuntu";
+  font-family: "Ubuntu", Helvetica, Arial, sans-serif;
   font-weight: 500;
   color: #353331;
   font-size: 13px;
@@ -233,7 +256,7 @@ ul {
 }
 
 .detail {
-  font-family: "Ubuntu";
+  font-family: "Ubuntu", Helvetica, Arial, sans-serif;
   font-weight: 400;
   color: #353331;
   font-size: .9em;
@@ -327,7 +350,7 @@ Media Queries
   }
 
   .copy {
-    font-size: 1.1em;
+    margin-top: 1.8em;
   }
 
 }
