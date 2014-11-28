@@ -4,38 +4,29 @@ Color palette
 
 #353331
 rgb(53, 51, 49)
-Main text color
-
-#7f7d7a
-rgb(127, 125, 122)
-medium gray
-
-#d3d2d0
-rgb(211, 210, 208)
-light gray
-
-#f3f3f3
-rgb(243, 243, 243)
-lightest gray
+Main text and header/footer background color
 
 #bc9b6a
 rgb(188, 155, 106)
-bronze
+bronze - accent color
 
 #faab31
 rgb(250, 171, 49)
-accent orange
+orange - hover accent
+
+rgb(255, 250, 239)
+
 
 #f7bb3b
 rgb(247, 187, 59)
 light orange
 */
 
-/* --------------------------
+/* -----------------------------
 Web fonts
 ----------------------------- */
 
-@import url(http://fonts.googleapis.com/css?family=Raleway:400);
+@import url(http://fonts.googleapis.com/css?family=Raleway:400,500);
 
 @import url(http://fonts.googleapis.com/css?family=Ubuntu:300,400,500);
 
@@ -50,7 +41,7 @@ Web fonts
     font-style: normal;
 }
 
-/* --------------------------
+/* -----------------------------
 Footer and scrollspy
 ----------------------------- */
 
@@ -75,25 +66,31 @@ body {
   font-weight: 300;
 }
 
-/* --------------------------
+/* -----------------------------
 Grid & Components
 ----------------------------- */
 
+#home > .container {
+  padding: 0;
+}
+
 .jumboHeader {
   background-color: #353331;
+  padding-top: 2em;
+  padding-bottom: 1.5em;
 }
 
 #home .logotype {
   font-family: "Raleway", sans-serif;
-  font-size: 3.6rem;
+  font-size: 4rem;
   font-weight: 400;
   color: #fabb3b;
 }
 
 .logoscript {
   font-family: 'dobkinplain', cursive, serif;
-  font-size: 2.8rem;
-  line-height: 3.5rem;
+  font-size: 3rem;
+  line-height: 3rem;
   margin-top: 1em;
   color: #bc9b6a;
 }
@@ -104,14 +101,17 @@ Grid & Components
   width: 100%;
   /* Set the fixed height of the footer */
   height: 60px;
-  background-color: #faab31;
+  background-color: #353331;
   padding-top: 12px;
 }
 
-/* about the artist */
+/* -----------------------------
+About the artist
+----------------------------- */
 
 .panelGroup {
   padding: 1.6em;
+  background-color: rgb(255, 250, 239);
   border-radius: 1em;
   border: 1px solid #bc9b6a;
 }
@@ -156,12 +156,17 @@ Grid & Components
   padding-right: 3px;
 }
 
-/* --------------------------
+/* -----------------------------
 Bootstrap Override Styles
 ----------------------------- */
 
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: #bc9b6a;
+}
+
 .navbar-default {
-  background-color: rgb(255, 250, 239);
+  background-color: #353331;
+  border-color: #bc9b6a;
 }
 
 .navbar-default .navbar-nav > .active > a {
@@ -170,11 +175,11 @@ Bootstrap Override Styles
 
 .navbar-default .navbar-nav > .active > a:hover,
 .navbar-default .navbar-nav > .active > a:focus {
-  background-color: #fff;
+  background-color: #bc9b6a;
 }
 
 .navbar-default .navbar-toggle {
-  border-color: transparent;
+  border-color: #bc9b6a;
 }
 
 .navbar-default .navbar-nav > li > a {
@@ -188,20 +193,33 @@ Bootstrap Override Styles
 .navbar-default .navbar-brand {
   color: #bc9b6a;
   font-family: "Raleway", sans-serif;
-  font-weight: 400;
+  font-size: 2.5rem;
+  font-weight: 500;
+}
+
+/* this color change is not working */
+.navbar-brand > a:hover {
+  color: #fabb3b;
 }
 
 a {
   color: #bc9b6a;
-}
-
-a:active {
   text-decoration: none;
 }
 
 a:hover {
-  color: #faab31;
+  color: #fabb3b;
   text-decoration: none;
+  font-weight: 400;
+}
+
+.btn {
+  border-radius: 5pt;
+}
+
+.footer .btn-default {
+  background-color: #353331;
+  border-color: #bc9b6a;
 }
 
 .footer .btn:focus,
@@ -217,10 +235,10 @@ a:hover {
 }
 
 .footer button {
-  margin-right: 2em;
+  margin-right: 3em;
 }
 
-/* --------------------------
+/* -----------------------------
 Custom Type Styles
 ----------------------------- */
 
@@ -269,13 +287,17 @@ Image Gallery
 ----------------------------*/
 
 #gallery ul {         
-  padding: 0 0 0 0;
-  margin: 0 0 0 0;
+  padding: 0;
+  margin: 0;
 }
 
 #gallery li {
   list-style: none;
   margin-bottom: 9px;
+}
+
+#gallery li a {
+  text-decoration: none;
 }
 
 #gallery img {
@@ -300,29 +322,42 @@ Image Gallery
   display: block;
   font-size: .8em;
   padding-top: 7px;
-  font-weight: bold;          
+  font-weight: bold;
+  text-decoration: none;         
 }
 
 .next {
   float: right;
   text-align: right;
+  text-decoration: none;
 }
 
+.controls a {
+  text-decoration: none;
+}
 
-/* --------------------------
+/* ---------------------------
 Media Queries
 --------------------------- */
 
 @media all and (min-width: 768px) {
 
+  #home > .container {
+    padding: 0 15px;
+  }
+
+  .jumboHeader {
+    padding-top: 2em;
+    padding-bottom: 2em;
+  }
+
   #home .logotype {
-    font-size: 8rem;
+    font-size: 7rem;
   }
 
   .logoscript {
-    font-size: 6rem;
-    line-height: 4.5rem;
-    margin-top: 1em;
+    font-size: 4rem;
+    line-height: 3.5rem;
   }
 
   .navbarLinks {
@@ -354,3 +389,20 @@ Media Queries
   }
 
 }
+
+@media all and (min-width: 1025px) {
+
+  .jumboHeader {
+    padding-top: 3em;
+    padding-bottom: 3em;
+  }
+
+  #home .logotype {
+    font-size: 10rem;
+  }
+
+  .logoscript {
+    font-size: 6rem;
+    line-height: 4.5rem;
+  }
+
