@@ -12,15 +12,17 @@ bronze - accent color
 
 #faab31
 rgb(250, 171, 49)
-orange - hover accent
-
-rgb(255, 250, 239)
-
+bright orange - logo color
 
 #f7bb3b
 rgb(247, 187, 59)
-light orange
-*/
+orange - hover accent
+
+#fffaef
+rgb(255, 250, 239)
+champagne - About background
+
+--------------------------*/
 
 /* -----------------------------
 Web fonts
@@ -84,7 +86,7 @@ Grid & Components
   font-family: "Raleway", sans-serif;
   font-size: 4rem;
   font-weight: 400;
-  color: #fabb3b;
+  color: #faab31;
 }
 
 .logoscript {
@@ -106,24 +108,39 @@ Grid & Components
 }
 
 /* -----------------------------
-About the artist
+About - About the artist
 ----------------------------- */
 
 .panelGroup {
-  padding: 1.6em;
-  background-color: rgb(255, 250, 239);
-  border-radius: 1em;
+  margin-top: 1em;
+  background-color: #fffaef;
   border: 1px solid #bc9b6a;
+  float: left;
 }
 
-.artistStatement {
-  padding: 1.5em;
+.panel-heading {
+  background-color: #bc9b6a;
+}
+
+.panel-heading h4 {
+  font-family: 'dobkinplain', cursive, serif;
+  font-size: 2.5em;
+  color: #fffaef;
 }
 
 .artistStatement p {
   float: left;
-  font-size: 18px;
+  font-size: 1.1em;
+  font-weight: 300;
+  line-height: 1.8em;
   color: #bc9b6a;
+}
+
+.artistStatement img {
+  max-width: 50%;
+  float: right;
+  margin: .5em;
+  vertical-align: top;
 }
 
 #processSlides {
@@ -157,37 +174,38 @@ About the artist
 }
 
 /* -----------------------------
-Bootstrap Override Styles
+Navigation - Bootstrap overrides
 ----------------------------- */
 
+.navbar {
+  background-color: #353331;
+  border-bottom: 1px solid #bc9b6a;
+}
+/* make pancake icon bars bronze */
 .navbar-default .navbar-toggle .icon-bar {
   background-color: #bc9b6a;
 }
-
-.navbar-default {
-  background-color: #353331;
-  border-color: #bc9b6a;
+/* remove border on pancake icon button */
+.navbar-toggle {
+  border: none;
 }
-
+/* scrollspy active link color */
+.navbar-default .navbar-nav > .active > a,
 .navbar-default .navbar-nav > .active > a {
-  background-color: rgb(245, 238, 220);
+  background-color: #fffaef;
 }
-
+/* scrollspy hover link color */
 .navbar-default .navbar-nav > .active > a:hover,
 .navbar-default .navbar-nav > .active > a:focus {
   background-color: #bc9b6a;
 }
-
-.navbar-default .navbar-toggle {
-  border-color: #bc9b6a;
-}
-
+/* link colors in navbar */
 .navbar-default .navbar-nav > li > a {
   color: #bc9b6a;
 }
 
 .navbar-default .navbar-nav > li > a:hover {
-  color: #fabb3b;
+  color: #f7bb3b;
 }
 
 .navbar-default .navbar-brand {
@@ -197,18 +215,22 @@ Bootstrap Override Styles
   font-weight: 500;
 }
 
-/* this color change is not working */
-.navbar-brand > a:hover {
-  color: #fabb3b;
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus {
+  color: #f7bb3b;
+  background-color: transparent;
 }
 
+/* global link styles */
 a {
   color: #bc9b6a;
   text-decoration: none;
+  font-weight: 400;
 }
 
-a:hover {
-  color: #fabb3b;
+a:hover,
+a:focus {
+  color: #f7bb3b;
   text-decoration: none;
   font-weight: 400;
 }
@@ -229,7 +251,7 @@ a:hover {
 .footer .btn:active.focus,
 .footer .btn.active.focus {
   outline: thin dotted;
-  outline: 5px auto #bc9b6a; /*-webkit-focus-ring-color */
+  outline: 5px auto #bc9b6a;
   outline-offset: -2px;
   background-color: #fff;
 }
@@ -251,7 +273,7 @@ h3 {
 p,
 ul {
   font-family: "Ubuntu", Helvetica, Arial, sans-serif;
-  font-weight: 300;
+  font-weight: 400;
   color: #353331;
   font-size: 1.1em;
   line-height: 1.7em;
@@ -259,7 +281,7 @@ ul {
   margin-bottom: 0;
 }
 
-.copy {
+.copyright {
   font-size: .9em;
   margin-top: 1em;
 }
@@ -268,12 +290,12 @@ ul {
   font-family: "Ubuntu", Helvetica, Arial, sans-serif;
   font-weight: 500;
   color: #353331;
-  font-size: 13px;
+  font-size: .92em;
   line-height: 1em;
   margin-top: 0;
 }
 
-.detail {
+.pieceDetail {
   font-family: "Ubuntu", Helvetica, Arial, sans-serif;
   font-weight: 400;
   color: #353331;
@@ -296,16 +318,24 @@ Image Gallery
   margin-bottom: 9px;
 }
 
-#gallery li a {
-  text-decoration: none;
-}
-
 #gallery img {
   cursor: pointer;
 }
 
 .modal-body {
   padding: 5px;
+}
+
+.modal-body a {
+  color: #bc9b6a;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.modal-body a:hover {
+  color: #f7bb3b;
+  font-weight: 500;
+  text-decoration: none;
 }
 
 .modal-content {
@@ -329,11 +359,6 @@ Image Gallery
 .next {
   float: right;
   text-align: right;
-  text-decoration: none;
-}
-
-.controls a {
-  text-decoration: none;
 }
 
 /* ---------------------------
@@ -384,7 +409,7 @@ Media Queries
     line-height: 1.4em;
   }
 
-  .copy {
+  .copyright {
     margin-top: 1.8em;
   }
 
