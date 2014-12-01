@@ -218,7 +218,7 @@ Navigation - Bootstrap overrides
 .navbar-default .navbar-brand:hover,
 .navbar-default .navbar-brand:focus {
   color: #f7bb3b;
-  background-color: transparent;
+  background-color: #353331;
 }
 
 /* global link styles */
