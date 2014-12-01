@@ -237,6 +237,7 @@ a:focus {
 
 .btn {
   border-radius: 5pt;
+  background-color: #353331;
 }
 
 .footer .btn-default {
