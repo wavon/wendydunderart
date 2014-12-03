@@ -181,6 +181,10 @@ Navigation - Bootstrap overrides
   background-color: #353331;
   border-bottom: 1px solid #bc9b6a;
 }
+
+.navbar-default .navbar-collapse {
+  border-top: 1px solid #bc9b6a;
+}
 /* make pancake icon bars bronze */
 .navbar-default .navbar-toggle .icon-bar {
   background-color: #bc9b6a;
@@ -218,7 +222,11 @@ Navigation - Bootstrap overrides
 .navbar-default .navbar-brand:hover,
 .navbar-default .navbar-brand:focus {
   color: #f7bb3b;
-  background-color: #353331;
+}
+/* set hover color of nav button */
+.navbar-header .navbar-toggle:hover,
+.navbar-header .navbar-toggle:focus {
+  background-color: #fffaef;
 }
 
 /* global link styles */
@@ -237,7 +245,6 @@ a:focus {
 
 .btn {
   border-radius: 5pt;
-  background-color: #353331;
 }
 
 .footer .btn-default {
@@ -385,7 +392,6 @@ Media Queries
     font-size: 4rem;
     line-height: 3.5rem;
   }
-
   .navbarLinks {
     float: right;
   }
