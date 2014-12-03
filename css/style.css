@@ -139,7 +139,7 @@ About - About the artist
 .artistStatement img {
   max-width: 50%;
   float: right;
-  margin: .5em;
+  margin: -3px 0 .5em .8em;
   vertical-align: top;
 }
 
@@ -399,6 +399,23 @@ Media Queries
   #gallery li {
     margin-bottom: 18px;
   }
+  /* About the artist */
+  .panel-heading {
+    padding-left: 24px;
+  }
+
+  .panel-body {
+    padding: 24px;
+  }
+
+  .artistStatement img {
+    margin: -2px 0 .8em 1em;
+  }
+  
+  .artistStatement p {
+    font-size: 1.2em;
+    line-height: 1.9em;
+  }
 
   .carousel-caption {
     padding: 2em;
@@ -438,3 +455,8 @@ Media Queries
     line-height: 4.5rem;
   }
 
+  .artistStatement p {
+    font-size: 1.3em;
+    line-height: 2em;
+  }
+}
