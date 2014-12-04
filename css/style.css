@@ -131,7 +131,7 @@ About - About the artist
 .artistStatement p {
   float: left;
   font-size: 1.1em;
-  font-weight: 300;
+  font-weight: 400;
   line-height: 1.8em;
   color: #bc9b6a;
 }
@@ -171,6 +171,17 @@ About - About the artist
   line-height: 1.2em;
   padding-left: 3px;
   padding-right: 3px;
+}
+/* Unicode character custom bullets (angle parentheses) */
+#contact ul {
+  list-style: none;
+}
+#contact li:before {
+  content: "\27E9";
+  margin-left: -1.5em;
+  padding-right: .6em;
+  font-size: 1.2em;
+  color: #bc9b6a;
 }
 
 /* -----------------------------
@@ -227,6 +238,15 @@ Navigation - Bootstrap overrides
 .navbar-header .navbar-toggle:hover,
 .navbar-header .navbar-toggle:focus {
   background-color: #fffaef;
+}
+/* custom arrows on carousel controls (Unicode angle parentheses) */
+.glyphicon-chevron-left:before {
+  content: "\27E8";
+  font-size: 1.6em;
+}
+.glyphicon-chevron-right:before {
+  content: "\27E9";
+  font-size: 1.6em;
 }
 
 /* global link styles */

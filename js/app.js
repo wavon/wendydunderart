@@ -23,8 +23,8 @@ $('li img').on('click',function(){
     var html = '';
     html += img;                
     html += '<div style="height:25px;clear:both;display:block;">';
-    html += '<a class="controls next" href="'+ (index+2) + '">next &raquo;</a>';
-    html += '<a class="controls previous" href="' + (index) + '">&laquo; prev</a>';
+    html += '<a class="controls next" href="'+ (index+2) + '">next &#x00A0 &#x27E9;</a>';
+    html += '<a class="controls previous" href="' + (index) + '">&#x27E8; &#x00A0 prev</a>';
     html += '</div>';
 
     $('#myModal').modal();
