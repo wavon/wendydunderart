@@ -1,11 +1,17 @@
 /* call on the class or ID of the parent element of the .nav component */
-
 $('body').scrollspy({ target: '.navbarLinks' });
 
 /* if adding or removing DOM elements, call the refresh method */
 
 $('[data-spy="scroll"]').each(function () {
   var $spy = $(this).scrollspy('refresh');
+});
+
+/* button collapses the nav accordion in mobile view */
+$(document).ready(function () {
+ $(".navbar-nav li a").click(function(event) {
+   $(".navbar-collapse").collapse('hide');
+ });
 });
 
 /* ------------------------
